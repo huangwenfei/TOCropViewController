@@ -396,6 +396,24 @@ open class CropViewController: UIViewController, TOCropViewControllerDelegate {
     }
     
     /**
+     Title color for the 'Done' button.
+     Setting this will override the Default which is a localized string for "Done".
+     */
+    public var doneButtonTitleColor: UIColor! {
+        set { toCropViewController.doneButtonTitleColor = newValue }
+        get { return toCropViewController.doneButtonTitleColor }
+    }
+
+    /**
+     Title color for the 'Cancel' button.
+     Setting this will override the Default which is a localized string for "Cancel".
+     */
+    public var  cancelButtonTitleColor: UIColor! {
+        set { toCropViewController.cancelButtonTitleColor = newValue }
+        get { return toCropViewController.cancelButtonTitleColor }
+    }
+    
+    /**
      This class internally manages and abstracts access to a `TOCropViewController` instance
      :nodoc:
      */
